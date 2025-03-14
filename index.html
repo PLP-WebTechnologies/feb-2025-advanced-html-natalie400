@@ -8,8 +8,11 @@
     <h1>Food delivery service</h1>
 </head>
 <body>
-    <img src="https://images.pexels.com/photos/8471703/pexels-photo-8471703.jpeg?auto=compress&cs=tinysrgb&w=300">
-    
+    <img src="https://images.pexels.com/photos/2433868/pexels-photo-2433868.jpeg?auto=compress&cs=tinysrgb&w=300">
+    <img src="https://images.pexels.com/photos/2773606/pexels-photo-2773606.jpeg?auto=compress&cs=tinysrgb&w=300" alt="pastries">
+    <img src="https://images.pexels.com/photos/1860207/pexels-photo-1860207.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1516419/pexels-photo-1516419.jpeg?auto=compress&cs=tinysrgb&w=300" alt="drinks">
+    <img src="https://media.istockphoto.com/id/545286388/photo/chinese-food-blank-background.jpg?s=612x612&w=is&k=20&c=yn2iMa8SUVvOTjMX5kMaebQEWkT00PZqYI5Dr0FFxZU=" alt="Chinese food">
     <img src="https://images.pexels.com/photos/2888679/pexels-photo-2888679.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Hot meals available">
     <p>Steps to order food</p>
     <ol type="I">
@@ -31,16 +34,40 @@
      <label for="password">Password</label>
      <input type="password"id="password" name="password"placeholder="Enter your passwod" minlength="6" maxlength="20" required>
 
-</form>
+    <!--select yuor favourite cuisine -->
+    <label for="cuisine">Favourite Cuisine:</label>
+    <select id="cuisine" name="cuisine">
+        <option value="italian">Italian</option>
+        <option value="chinese">Chinese</option>
+        <option value="kenyan">Kenyan</option>
+        <option value="mexican">Mexican</option>
+        <option value="indian">Indian</option>
+    </select>
+    <!-- Meal Preference (Radio Buttons) -->
+     <p>You can choose one Preference here</p>
+    <p>Meal Preference:</p>
+    <input type="radio" id="vegetarian" name="meal" value="vegetarian" required>
+    <label for="vegetarian">Vegetarian</label>
+    
+    <input type="radio" id="nonveg" name="meal" value="nonveg" required>
+    <label for="nonveg">Non-Vegetarian</label>
+    
+    <input type="radio" id="vegan" name="meal" value="vegan" required>
+    <label for="vegan">Vegan</label>
+    
+    <!-- Extra Add-ons (Checkboxes) -->
+    <p>Extra Add-ons:</p>
+    <input type="checkbox" id="cheese" name="addons" value="cheese">
+    <label for="cheese">Extra Cheese</label><br>
+    
+    <input type="checkbox" id="sauce" name="addons" value="sauce">
+    <label for="sauce">Extra Sauce</label><br>
+<!-- Submit Button -->
+<button type="submit">Register</button>
+</form> 
+<br>
 
-<label for="cuisine">Favourite Cuisine:</label>
-<select id="cuisine" name="cuisine">
-<option value="italian">Italian</option>
-<option value="chinese">Chinese</option>
-<option value="kenyan">Kenyan</option>
-<option value="mexican">Mexican</option>
-<option value="indian">Indian</option>
-</select>
+<br><br>
     <table>
         <thead>
             <tr>
